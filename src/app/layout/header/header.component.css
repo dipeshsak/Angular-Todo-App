@@ -1,0 +1,13 @@
+.headerDiv{
+    text-align: center;
+    background-color: black;
+    height: 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerH3{
+    font-size: 28px;
+}
