@@ -1,14 +1,14 @@
-<div>
-  <div *ngFor="let item of todos">
+  <div *ngFor="let item of todos" style="margin:20px;width: 100%;display:flex;align-items: center;justify-content: center;">
+    <div style="color:white;width: 60%;display: flex;align-items: center;justify-content: space-evenly;background-color: black;">
     <input 
     type="checkbox" 
     [checked]="item.isCompleted"
     (change)="changeTodoStatus(item)"
     />
-    <span>{{item.title | uppercase}}</span>
-    <span>{{item.date | date}}</span>
+    <span [ngClass]="{strikeText:item.isCompleted}">{{item.title | uppercase}}</span>
+    <span  [ngClass]="{strikeText : item.isCompleted}">{{item.date | date}}</span>
     <span>
       <p (click)="deleteTodo(item)">Trash</p>
     </span>
   </div>
-</div>
+  </div>

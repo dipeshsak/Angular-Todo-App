@@ -1,8 +1,9 @@
-<div>
+<div style="display: flex; align-items: center;justify-content:space-evenly;background-color:aquamarine">
   <input type="text" name="todo" placeholder="Enter a Todo"
   [(ngModel)]="todoTitle"
+  style="width:400px;margin:20px;height: 30px;"
   />
   <div>
-    <button (click)="handleAdd()">Add Todo</button>
+    <button style="height: 30px;" (click)="handleAdd()">Add Todo</button>
   </div>
 </div>
